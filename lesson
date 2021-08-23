@@ -1,0 +1,94 @@
+1-2基本语句 
+#include<stdio.h>
+int main()
+{	
+	printf(" ");
+	printf(" \n"); //换行
+	printf(" \t"); //制表符
+	return 0; 
+}
+
+int a=3,b,c=5;	//int a=3;	int b;	int c=5;
+float a=3.14;
+double a=3.14; //小数点后允许位数多
+
+//大写小写差32
+char a='A',b='B',c='C';	
+a=a+32; //a='a'
+b=b+32; //b='b'
+c=c+32; //c='c'
+
+//%d--int  %f--float,double小数  %c--char字符
+printf("a=%d,b=%d\n",a,b);
+
+//%d--int  %f--float  %lf--double  %c--char
+int a,b;
+scanf("%d,%d",&a,&b); //input: C,D输入内容要与引号内完全一致
+
+float a,b;
+scanf("%f,%f",&a,&b);
+
+double a,b;
+scanf("%lf,%lf",&a,&b);
+
+char a,b;
+scanf("%c,%c",&a,&b);
+
+char a,b,c;
+a=getchar(); //键盘输入一个char
+a=a+32;
+putchar(a); //输出一个char字符
+
+#include<math.h>
+
+int x;
+abs(x); //求整数的绝对值
+
+double x;
+fabs(x); //求绝对值
+sin(x); //
+cos(x); //
+tan(x); //
+exp(x); //求e^x
+sqrt(x); //求x的开方
+log(x); //求lnx
+log10(x); //求lgx
+
+double x,y;
+pow(x,y); //求x^y
+
+double a=3.67;
+double b=5.43;
+double c=6.21;
+printf("a是%5.2f，b是%-5.2f，c是%7.4f\n",a,b,c);
+//%m.nf,m代表总共占几位，n代表小数点后占几位，小数点也占位数，负号代表空格补在后面
+a是 3.67，b是5.43 ，c是 6.2100
+
+//%e以科学计数法,小数点后6位，后面5位（e+xxx）
+printf("身高是%e厘米",123.456); //身高是1.234560e+002
+
+//求个十百位数
+double a;
+int ge,shi,bai;
+bai=(int)(a/100);
+shi=(int)((a-bai*100)/10);
+ge=(int)(a-bai*100-shi*10);
+
+
+
+3选择语句
+if()
+{} //如果只有一行语句，可以省去大括号
+else{}
+
+表达式1 ？表达式2 ：表达式3
+
+switch()
+{
+	case 常量1:语句；break;
+	default:语句；break;
+}
+
+
+
+4循环语句
